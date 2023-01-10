@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <div id="root">
+
+    <div class="chat">
+      <div class="chat__body">
+        <div class="chat__users users">
+          <ul class="users__list">
+          </ul>
+        </div>
+        <div class="chat__messages messages">
+          <div class="messages__body">
+            <ul class="messages__list">
+            </ul>
+            <form name="chat" class="messages__form">
+              <input name="message" type="text" class="messages__input" placeholder="Введите сообщение">
+              <button class="messages__button"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <h3 class="popup__title">Выберите псевдоним</h3>
+          <form name="nickname" class="popup__form" novalidate="">
+            <input name="name" id="title" type="text" class="popup__input" required placeholder="Введите псевдоним">
+            <div class="popup__buttons">
+              <button name="save" data-name="save" class="button">Продолжить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

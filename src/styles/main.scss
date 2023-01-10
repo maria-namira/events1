@@ -1,0 +1,213 @@
+@import "vars.scss";
+@import "mixins.scss";
+@import "null.scss";
+@import "popup.scss";
+
+$brdColor: #7e1416;
+$bgColor: #192e41;
+$mineColor: rgb(255, 82, 82);
+$mineBgColor1: rgb(6, 95, 6);
+$mineBgColor: rgb(64, 64, 221);
+$bgMessage: rgb(226, 224, 224);
+
+.d_none {
+  display: none;
+}
+
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+
+.red::placeholder {
+  color: red;
+}
+
+.chat {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-image: url("../images/fon_chata.jpg");
+  padding: 20px;
+  &__body {
+    max-width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    font-size: 1.3rem;
+  }
+}
+
+.users {
+  min-width: 300px;
+  &__item {
+    display: flex;
+    background-color: $neutral-placeholder;
+    padding: 10px;
+    border-radius: 15px;
+    &.mine {
+      color: $mineColor;
+    }
+    &:nth-child(n + 2) {
+      margin-top: 15px;
+    }
+  }
+
+  &__avatar {
+    padding: 30px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background-image: url("../images/avatar.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &__name {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+}
+
+.users__counts,
+.users__list,
+.messages {
+  border: 1px solid $brdColor;
+  border-radius: 15px;
+  background-color: $bgColor;
+}
+.users__counts {
+  margin-right: -20px;
+  padding: 20px 40px 20px 20px;
+  margin-top: 20px;
+  .users-quantity_users, .users_quantity_messages {
+    color: $bgMessage;
+  }
+  .users_quantity_messages {
+    margin-top: 20px;
+  }
+}
+.users__list {
+  // position: relative;
+  margin-top: 20px;
+  margin-right: -20px;
+  padding: 20px 40px 20px 20px;
+  // При добавлении блока с счётчиками нужно изменить высоту на 76vh
+  height: 88vh;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}
+
+
+.messages {
+  flex: 1;
+  padding: 20px;
+  height: 100%;
+  position: relative;
+  &__body {
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+  }
+  &__list {
+    position: relative;
+    flex: 1 1 auto;
+    overflow: auto;
+    .error {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      &__body {
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &__content {
+        color: white;
+        font-size: 2rem;
+      }
+    }
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+  &__form {
+    display: flex;
+    margin-top: 20px;
+  }
+  &__input {
+    padding: 15px;
+    border-radius: 15px;
+    height: 55px;
+    width: 100%;
+    font-size: 1.3rem;
+    background-color: $bgMessage;
+  }
+  &__button {
+    height: 55px;
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 20px;
+    background-color: $bgMessage;
+    background-image: url("../images/right-arrow.png");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.message {
+  &.mine {
+    .message__wrapper {
+      background-color: $primary-color;
+      .message__content {
+        color: $bgMessage;
+        text-align: left;
+      }
+    }
+    text-align: right;
+    .message__title {
+      color: $mineColor;
+      text-align: left;
+      .message__name {
+        color: $mineColor;
+      }
+    }
+  }
+  &__wrapper {
+    display: inline-block;
+    max-width: 70%;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: $neutral-placeholder;
+  }
+  &:nth-child(n + 2) {
+    margin-top: 15px;
+  }
+  &__title {
+    font-size: 1rem;
+    .message__name {
+      color: $brdColor;
+    }
+    .message__data {
+      margin-left: 20px;
+    }
+  }
+  &__content {
+    margin-top: 20px;
+  }
+}
