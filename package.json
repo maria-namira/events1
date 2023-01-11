@@ -4,17 +4,20 @@
   "description": "\"\"",
   "main": "index.js",
   "scripts": {
-    "test": "\"jest --testPathPattern=./src/\"",
+    "test": "jest --testPathPattern=./src/",
     "build":  "webpack-dev-server --config webpack",
-    "start": "webpack-dev-server --config webpack.dev.js"
-
-  },
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "lint": "eslint",
+    "coverage": "jest --coverage",
+    "e2e": "jest --testPathPattern=./e2e/ --runInBand",
+    "doc": "jsdoc -c jsdoc.conf.json"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maria-namira/events1.git"
   },
   "author": "\"maria-namira\"",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/maria-namira/events1/issues"
   },
