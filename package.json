@@ -1,0 +1,32 @@
+{
+  "name": "yes",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "\"jest --testPathPattern=./src/\"",
+    "build":  "webpack-dev-server --config webpack",
+    "start": "webpack-dev-server --config webpack.dev.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maria-namira/events1.git"
+  },
+  "author": "\"maria-namira\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maria-namira/events1/issues"
+  },
+  "homepage": "https://github.com/maria-namira/events1#readme",
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-plugin-react": "^7.31.11",
+    "http-server": "^14.1.1",
+    "live-server": "^0.9.1"
+  },
+  "dependencies": {
+    "babel-loader": "^9.1.2",
+    "webpack": "^5.75.0"
+  }
+}
