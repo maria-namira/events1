@@ -1,6 +1,6 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/p8jenvx48i5w7129/branch/master?svg=true)](https://ci.appveyor.com/project/maria-namira/events1/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/kdk7lbvf04dyvo05/branch/master?svg=true)](https://ci.appveyor.com/project/maria-namira/events1/branch/master)
 
-#### Deployment:  <a href="https://maria-namira.github.io/events1/">Github Pages</a>
+#### Deployment:  <a href="https://maria-namira.github.io/events1/">events1</a>
 
 #### Backend:  <a href="https://github.com/maria-namira/events1_backend">Repository</a>
 
