@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest --testPathPattern=./src/",
     "build": "webpack --mode production",
+    "dev": "webpack --mode development",
     "start": "webpack-dev-server --config webpack.dev.js",
     "lint": "eslint",
     "coverage": "jest --coverage",
