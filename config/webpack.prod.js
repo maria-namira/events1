@@ -23,6 +23,7 @@ module.exports = merge(common, {
             loader: MiniCssExtractPlugin.loader,
             options: {
               publicPath: '../',
+              resources: ['./path/to/vars.scss', './path/to/mixins.scss']
             }
           },
           {
