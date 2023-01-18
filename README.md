@@ -2,7 +2,7 @@
 
 #### Deployment:  <a href="https://maria-namira.github.io/events1/">events1</a>
 
-#### Backend:  <a href="https://github.com/maria-namira/events1_backend">Repository</a>
+#### Backend:  <a href="https://github.com/maria-namira/events1.git">events1</a>
 
 #### Server:  <a href="https://events1.maria-namira.herokuapp.com/">Heroku</a>
 
