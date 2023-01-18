@@ -1,10 +1,9 @@
-
-@import "vars.scss";
-@import "mixins.scss";
-@import "null.scss";
-@import "popup.scss";
-@import "main.scss";
-@import "fonts.scss";
+import "vars.scss";
+import "mixins.scss";
+import "null.scss";
+import "popup.scss";
+import "main.scss";
+import "fonts.scss";
 
 $brdColor: #7e1416;
 $bgColor: #192e41;
