@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --testPathPattern=./src/",
-    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
-    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "dev": "webpack serve",
+    "start": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
     "lint": "eslint",
     "coverage": "jest --coverage",
     "e2e": "jest --testPathPattern=./e2e/ --runInBand",
