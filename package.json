@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --testPathPattern=./src/",
-    "dev": "webpack serve",
-    "start": "webpack serve --config webpack.dev.js",
+   "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint",
     "coverage": "jest --coverage",
