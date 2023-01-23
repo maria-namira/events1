@@ -26,8 +26,9 @@ module.exports = merge(common, {
             }
           },
           {
-            loader: 'css-loader',
+            loader: 'sass-resources-loader',
             options: {
+              resources: './path/to/vars.scss'
               importLoaders: 2,
               sourceMap: false,
               modules: false,
