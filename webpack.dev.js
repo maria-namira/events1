@@ -16,7 +16,7 @@ module.exports = merge(common, {
     open: true,
     compress: true,
     port: 8080,
-  },
+  }
 
   plugins: [
     // Only update what has changed on hot reload
