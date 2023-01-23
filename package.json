@@ -4,11 +4,10 @@
   "description": "\"\"",
   "main": "index.js",
   "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "lint": "eslint .",
     "test": "jest --testPathPattern=./src/",
-    "build": "webpack --mode production",
-    "dev": "webpack --mode development",
-    "start": "webpack-dev-server --config webpack.dev.js",
-    "lint": "eslint",
     "coverage": "jest --coverage",
     "e2e": "jest --testPathPattern=./e2e/ --runInBand",
     "doc": "jsdoc -c jsdoc.conf.json"
