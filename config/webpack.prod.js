@@ -17,17 +17,12 @@ module.exports = merge(common, {
   module: {
     rules: [
       {
-         test: /\.scss$/,
+        test: /\.(scss|css)$/,
         use: [
-            "style-loader", // 
-            "css-loader", // 
-            "sass-loader", //
-        [
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
               publicPath: '../',
-              resources: ['./path/to/vars.scss', './path/to/mixins.scss']
             }
           },
           {
