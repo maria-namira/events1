@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "babel-loader": "^9.1.2",
+    "cross-env": "^7.0.3",
     "webpack": "^5.75.0"
   }
 }
