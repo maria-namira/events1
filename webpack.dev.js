@@ -16,10 +16,9 @@ module.exports = merge(common, {
     open: true,
     compress: true,
     port: 8080,
-  }
-
-  plugins: [
+   plugins: [
     // Only update what has changed on hot reload
     new webpack.HotModuleReplacementPlugin(),
   ],
+  },
 });
