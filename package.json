@@ -4,20 +4,13 @@
   "description": "\"\"",
   "main": "index.js",
   "scripts": {
-   "build": "webpack --config webpack.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "lint": "eslint .",
     "test": "jest --testPathPattern=./src/",
-    "dev": "webpack serve",
-    "start": "webpack server --config webpack.dev.js",
-    "lint": "eslint",
     "coverage": "jest --coverage",
     "e2e": "jest --testPathPattern=./e2e/ --runInBand",
-    "doc": "jsdoc -c jsdoc.conf.json",
-    "preshow:doc": "npm run doc",
-    "show:doc": "live-server doc",
-    "preshow:dist": "npm run build",
-    "show:dist": "live-server dist",
-    "preshow:coverage": "npm run coverage",
-    "show:coverage": "live-server coverage/lcov-report"
+    "doc": "jsdoc -c jsdoc.conf.json"
   },
   "repository": {
     "type": "git",
