@@ -1,8 +1,9 @@
 {
   "name": "ahj-events1 ",
-  version": "1.0.0",
+   "version": "1.0.0",
+  "main": "src/index.js"
+}
   "description": "",
-  "main": "index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
