@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --config=config/webpack.dev.js",
    "prod": "webpack --config=config/webpack.prod.js",
-   "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+   "build": "webpack --config webpack.prod.js",
     "lint": "eslint .",
     "coverage": "jest --coverage",
     "e2e": "jest --testPathPattern=./e2e/ --runInBand",
